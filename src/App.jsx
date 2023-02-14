@@ -3,6 +3,8 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import DotGroup from "./scenes/DotGroup";
 import Navbar from "./scenes/Navbar";
 import Landing from "./scenes/Landing";
+import MySkills from "./scenes/MySkills";
+import LineGradient from "./components/LineGradient";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -36,7 +38,13 @@ function App() {
             />
           )}
           {/* Hero page  */}
+          {/* setSelectedPage function just pathaya dichi for contact er jnno  */}
           <Landing setSelectedPage={setSelectedPage} />
+        </div>
+        {/* Divider or horizontal  */}
+        <LineGradient />
+        <div className="w-5/6 mx-auto md:h-full">
+          <MySkills />
         </div>
       </div>
     </>
