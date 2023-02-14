@@ -35,6 +35,7 @@ function App() {
               setSelectedPage={setSelectedPage}
             />
           )}
+          {/* Hero page  */}
           <Landing setSelectedPage={setSelectedPage} />
         </div>
       </div>
